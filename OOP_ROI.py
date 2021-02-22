@@ -36,7 +36,7 @@ class Investment():
     def return_on(self):
         flow = self.cashflow()
         downtotal = self.downp + self.closing
-        print(f"{((flow / downtotal)*12)*100}%")
+        print(f"Your ROI is {((flow / downtotal)*12)*100}%")
 
     
 class Main:
@@ -64,7 +64,8 @@ class Main:
         alpha = float(input("Lastly onto downpayment, what did you put down? "))
         beta = float(input("And the closing costs? "))
         name.downpayment(alpha, beta)
-            
+
+           
 
 
 
